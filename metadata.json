@@ -1,0 +1,8 @@
+{
+  "name": "TAJ | تاج للأعمال الحديدية والحلول الهندسية",
+  "description": "شركة TAJ الرائدة في تصنيع وتنفيذ الأعمال الحديدية والحلول الهندسية المخصصة للفلل والمشاريع السكنية الراقية في دولة الإمارات العربية المتحدة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

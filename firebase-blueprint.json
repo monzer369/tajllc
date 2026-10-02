@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Customer inquiry and custom ironwork consultation request for high-end residential projects in the UAE",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100,
+          "description": "Client name"
+        },
+        "city": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100,
+          "description": "Client city in UAE"
+        },
+        "requestType": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100,
+          "description": "Type of metalwork or engineering solution requested"
+        },
+        "details": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "Additional notes or project specifications"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Submission timestamp"
+        }
+      },
+      "required": [
+        "name",
+        "city",
+        "requestType",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/inquiries/{inquiryId}": {
+      "schema": {
+        "$ref": "#/entities/Inquiry"
+      },
+      "description": "Collection of client consultation and custom engineering requests"
+    }
+  }
+}
